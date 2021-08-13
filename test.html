@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drop Down</title>
+    </head>
+
+    <body>
+        <form id='example' method='GET' action='index.php'>
+            <select id='menu' name='family'>
+                <option value='Kristen'>Kristen</option>
+                <option value='Henk'>Henk</option>
+                <option value='Andrew'>Andrew</option>
+                <option value='Derek'>Derek</option>
+            </select>
+        </form>
+    <script src='http://code.jquery.com/jquery-1.8.3.min.js'></script>
+
+    <script>
+        $(document).ready(function() {
+
+    $('#menu').change(function() {
+        //remove the select attr from the option that currently has a value of selected
+        $("option[selected='true']").removeAttr('selected');
+        //add the selected attr with value of true to the option that was clicked on
+        $(this).attr('selected', 'true');
+        //submit the form
+        this.form.submit();
+    });
+});
+
+    </script>
+    </body>
+</html>

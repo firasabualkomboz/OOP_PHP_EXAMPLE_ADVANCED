@@ -8,11 +8,23 @@
 // }
 
 
-
 for ($x = 0; $x <= 10; $x++) {
     echo "The number is: $x <br>";
   }
 
+
+//   start variable
+
+$first = "feras";
+$last  = "anwer";
+
+$age = 21;
+$sal = 800;
+
+$total = $age * $sal;
+
+echo " $total " ;
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -21,6 +21,7 @@ function remove_char_from($word , $c)
 //    echo '<pre>';
 //    print_r($charsList);
 //    echo '</pre>';
+
     $newWord = "";
     foreach ($charsList as $char) :
 

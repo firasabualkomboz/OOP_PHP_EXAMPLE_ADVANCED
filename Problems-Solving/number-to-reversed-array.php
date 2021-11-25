@@ -14,8 +14,8 @@
             // start method #2
             $empty = [];
             foreach ($arrayOfStrings as $str):
-                array_unshift($empty,intval($str)); // intval -> return integer for strings
-                // array_push($empty,intval($str)); // or array push
+            array_unshift($empty,intval($str)); // intval -> return integer for strings
+            // array_push($empty,intval($str)); // or array push
             endforeach;
             return $empty;
         }

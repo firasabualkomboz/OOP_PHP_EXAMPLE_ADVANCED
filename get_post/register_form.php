@@ -97,61 +97,68 @@
 <body>
 
 <div class="container">
-<form action="" method="post" novalidate>
+    <div class="row">
+        <div class="col-lg-6">
+            <form class="mt-5 mb-5" action="" method="post" novalidate>
+                <div class="mb-3">
+                    <label class="form-label">User name</label>
+                    <input value="<?php $username ?>" type="text" class="form-control <?php echo isset($errors['username']) ? 'is-invalid' : '' ?> " name="username" >
 
-<div class="mb-3">
-<label class="form-label">User name</label>
-<input value="<?php $username ?>" type="text" class="form-control <?php echo isset($errors['username']) ? 'is-invalid' : '' ?> " name="username" >
+                    <div class="invalid-feedback">
+                        <?php echo $errors['username'] ?? '' ?>
+                    </div>
 
-<div class="invalid-feedback">
-<?php echo $errors['username'] ?? '' ?>
-</div>
+                </div>
 
-</div>
+                <div class="mb-3">
+                    <label class="form-label <?php echo isset($errors['email']) ? 'is-invalid' : '' ?> ">Email address</label>
+                    <input value="<?php $email ?>" type="email" class="form-control" name="email">
 
-<div class="mb-3">
-<label class="form-label <?php echo isset($errors['email']) ? 'is-invalid' : '' ?> ">Email address</label>
-<input value="<?php $email ?>" type="email" class="form-control" name="email">
+                    <div class="invalid-feedback">
+                        <?php echo $errors['email'] ?? '' ?>
+                    </div>
 
-<div class="invalid-feedback">
-<?php echo $errors['email'] ?? '' ?>
-</div>
+                </div>
 
-</div>
+                <div class="mb-3">
+                    <label class="form-label <?php echo isset($errors['password']) ? 'is-invalid' : '' ?>">Password</label>
+                    <input value="<?php $password ?>" type="password" class="form-control" name="password">
 
-<div class="mb-3">
-<label class="form-label <?php echo isset($errors['password']) ? 'is-invalid' : '' ?>">Password</label>
-<input value="<?php $password ?>" type="password" class="form-control" name="password">
+                    <div class="invalid-feedback">
+                        <?php echo $errors['password'] ?? '' ?>
+                    </div>
 
-<div class="invalid-feedback">
-<?php echo $errors['password'] ?? '' ?>
-</div>
-
-</div>
+                </div>
 
 
-<div class="mb-3">
-<label class="form-label <?php echo isset($errors['password_confirm']) ? 'is-invalid' : '' ?>">Repeat Password</label>
-<input value="<?php $password_confirm ?>" type="password" class="form-control" name="password_confirm">
+                <div class="mb-3">
+                    <label class="form-label <?php echo isset($errors['password_confirm']) ? 'is-invalid' : '' ?>">Repeat Password</label>
+                    <input value="<?php $password_confirm ?>" type="password" class="form-control" name="password_confirm">
 
-<div class="invalid-feedback">
-<?php echo $errors['password_confirm'] ?? '' ?>
-</div>
+                    <div class="invalid-feedback">
+                        <?php echo $errors['password_confirm'] ?? '' ?>
+                    </div>
 
-</div>
+                </div>
 
-<div class="mb-3">
-<label class="form-label <?php echo isset($errors['link_cv']) ? 'is-invalid' : '' ?>">link cv</label>
-<input value="<?php $link_cv ?>" type="text" class="form-control" name="link_cv">
+                <div class="mb-3">
+                    <label class="form-label <?php echo isset($errors['link_cv']) ? 'is-invalid' : '' ?>">link cv</label>
+                    <input value="<?php $link_cv ?>" type="text" class="form-control" name="link_cv">
 
-<div class="invalid-feedback">
-<?php echo $errors['link_cv'] ?? '' ?>
-</div>
+                    <div class="invalid-feedback">
+                        <?php echo $errors['link_cv'] ?? '' ?>
+                    </div>
 
-</div>
+                </div>
 
-<button class="btn btn-primary">Register</button>
-</form>
+                <button class="btn btn-primary">Register</button>
+            </form>
+
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+    </div>
 
 
     </div>

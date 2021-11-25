@@ -3,10 +3,8 @@
 session_start();
 echo session_id(). '<br>';
 
-$_SESSION['counter'] ??=0;
+$_SESSION['counter'] ??= 0;
 $_SESSION['counter']++;
-
-
 
 ?>
 

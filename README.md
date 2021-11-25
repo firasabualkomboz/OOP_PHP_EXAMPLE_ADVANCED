@@ -1,6 +1,6 @@
-# OOP_PHP_EXAMPLE_ADVANCED
+## OOP PHP Advanced with Challenges 
 
-## Problem solving : PHP 
+* ### Problem solving : PHP 
 
 - 00 |  [remove_duplicate_words](https://github.com/firasabualkomboz/OOP_PHP_EXAMPLE_ADVANCED/blob/master/Problems-Solving/remove_duplicate_words.php).
 
@@ -11,3 +11,4 @@
 - 03 |  [find-longest-word-in-string](https://github.com/firasabualkomboz/OOP_PHP_EXAMPLE_ADVANCED/blob/master/Problems-Solving/find-longest-word-in-string.php).
 
 - 04 |  [add-commas-and-underscore](https://github.com/firasabualkomboz/OOP_PHP_EXAMPLE_ADVANCED/blob/master/Problems-Solving/add-commas-and-underscore.php).
+
